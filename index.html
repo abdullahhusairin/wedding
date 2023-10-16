@@ -354,7 +354,7 @@
               data-gallery="My Gallery"
             >
               <img
-                src="img/gallery/thumbnail/5.JPG"
+                src="img/gallery/thumbnail/6.jpg"
                 alt="Abdullah & Mela"
                 class="img-fluid w-100% rounded"
               />
@@ -362,13 +362,13 @@
           </div>
           <div class="col mt-3">
             <a
-              href="img/gallery/4.JPG"
+              href="img/gallery/7.JPG"
               data-toggle="lightbox"
               data-caption="Abdullah & Mela (Puncak Paralayang)"
               data-gallery="My Gallery"
             >
               <img
-                src="img/gallery/thumbnail/4.jpg"
+                src="img/gallery/thumbnail/7.jpg"
                 alt="Abdullah & Mela"
                 class="img-fluid w-100% rounded"
               />
@@ -470,28 +470,30 @@
         </form>
 
         <div class="row justify-content-center mt-5">
-          <div class="col-md-6"></div>
-          <div id="disqus_thread"></div>
-          <script>
-            /**
-             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-            (function () {
-              // DON'T EDIT BELOW THIS LINE
-              var d = document,
-                s = d.createElement("script");
-              s.src = "https://wedding-am.disqus.com/embed.js";
-              s.setAttribute("data-timestamp", +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <div class="col-md-6">
+            <div id="disqus_thread">
+              <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+                var disqus_config = function () {
+                  this.page.url = "{{ page.url | https://wedding-ten-phi.vercel.app }}";
+                  this.page.identifier = "{{ page.url | https://wedding-ten-phi.vercel.app }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function () {
+                  // DON'T EDIT BELOW THIS LINE
+                  var d = document,
+                    s = d.createElement("script");
+                  s.src = "https://wedding-am.disqus.com/embed.js";
+                  s.setAttribute("data-timestamp", +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -564,7 +566,7 @@
         loop
       >
         <source
-          src="audio/bg-music-wedding.mp3"
+          src="audio/bg-music-wedding2.mp3"
           type="audio/mp3"
         />
       </audio>
